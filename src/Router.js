@@ -30,7 +30,7 @@ function Test(){
               <ul class="nav justify-content-center" style={{ fontSize: '1.4em', marginTop: '0px' }}>
                 <NavPress>
                   <li class="nav-item">
-                    <Link to="/" class="nav-link active" >About Me</Link>
+                    <Link to="/mywebApp" class="nav-link active" >About Me</Link>
                   </li>
                 </NavPress>
                 <NavPress>
@@ -48,7 +48,7 @@ function Test(){
             <PoseGroup>
               <RouteContainer key={location.pathname}>
                 <Switch location={location}>
-                  <Route exact path="/" component={Home} key="home"/>
+                  <Route exact path="/mywebApp" component={Home} key="home"/>
                   <Route path="/projects" component={Projects} key="projects"/>
                   <Route path="/contact" component={About} key="about"/>
                   <Route path="/item" component={Item} key="item"/>
