@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6bb0a8e8b2a8564c0efb5565d78ea7f6",
+    "revision": "b700e2d8b876bdc0a76c6f69aa41d3c6",
     "url": "/index.html"
   },
   {
-    "revision": "33e4f130306a6d863de5",
-    "url": "/static/css/main.d89a06c7.chunk.css"
+    "revision": "aaeda3b5f00af5ac77a5",
+    "url": "/static/css/main.200361e4.chunk.css"
   },
   {
-    "revision": "96db5aeca5d741c95731",
-    "url": "/static/js/2.7bc50b2c.chunk.js"
+    "revision": "f79e48ee80d9cfeefd68",
+    "url": "/static/js/2.45e36de0.chunk.js"
   },
   {
-    "revision": "33e4f130306a6d863de5",
-    "url": "/static/js/main.0f42bc62.chunk.js"
+    "revision": "aaeda3b5f00af5ac77a5",
+    "url": "/static/js/main.e45cb120.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -22,6 +22,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d2c04dec58b355c2899137372b93296a",
     "url": "/static/media/BI1.d2c04dec.png"
+  },
+  {
+    "revision": "03f18edf868f3ea4a2a78baaa32f7845",
+    "url": "/static/media/BI2.03f18edf.png"
   },
   {
     "revision": "9dc269c8490dd638e376b3b03339fa93",
@@ -34,6 +38,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8f1664d2e0cf4f686b8fd92040247693",
     "url": "/static/media/img.8f1664d2.jpg"
+  },
+  {
+    "revision": "06acdd542d8007ce1792a46060edb110",
+    "url": "/static/media/nokia1.06acdd54.png"
+  },
+  {
+    "revision": "853098f99d7363fe5a57b0e2b48ff439",
+    "url": "/static/media/nokia2.853098f9.png"
+  },
+  {
+    "revision": "559b1292ae1e1dc2f68f2b01f165e7dc",
+    "url": "/static/media/nokia3.559b1292.png"
   },
   {
     "revision": "57d24cf0094ee32f4076842abf7f1baa",
