@@ -2,7 +2,7 @@
   "name": "mywebapp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://marongjun.github.io",
+  "homepage": "http://marongjun.github.io/mywebApp/",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "gh-pages": "^2.0.1",
