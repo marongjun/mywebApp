@@ -33,7 +33,7 @@ class Navbar extends React.Component {
       return (
         <div id="footer">
           <div class="container text-Align-center " style={{ marginTop: '10%', width: '90vw' }}>
-            <p class="footer-block" style={{ fontSize: '1.3em' }}>Web Design &amp; Development &copy; Rongjun Ma</p>
+            <p class="footer-block" style={{ fontSize: '1em' }}>Web Design &amp; Development &copy; Rongjun Ma</p>
           </div>
         </div>
       )

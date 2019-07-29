@@ -1,7 +1,9 @@
 import React from 'react';
 import './style.css';
 import SplitText from 'react-pose-text';
+import posed from 'react-pose';
 
+// Rongjun using split text
 const charPoses = {
   exit: { opacity: 0, y: 20 },
   enter: {
@@ -23,15 +25,15 @@ class Banner extends React.Component {
       let currentIdx = this.state.textIdx
       // console.log(this.state.textIdx)
       this.setState({ textIdx: currentIdx + 1 })
-    }, 2000)
+    }, 2000);
   }
 
   componentWillUnmount () {
-    clearInterval(this.timeout)
+    clearInterval(this.timeout);
   }
 
   render () {
-    const textArray = ['UX Designer', 'Front-End developer', 'Doer', 'Fast Leaner', 'Thinker']
+    const textArray = ['UX Designer', 'Front-End developer', 'Doer', 'Fast Learner', 'Thinker']
     let textThatChanges = textArray[this.state.textIdx % textArray.length]
 
     return (
@@ -39,7 +41,7 @@ class Banner extends React.Component {
 
         <div class= "shaped" >
         </div>
-        <p style={{ fontSize: '8vw' }} ><SplitText charPoses={charPoses}>Rongjun</SplitText></p>
+        <p style={{ fontSize: '8vw' }} ><SplitText initialPose="exit" pose="enter" charPoses={charPoses}>Rongjun</SplitText></p>
         <p style={{ fontSize: '4vw' }}>{textThatChanges} </p>
 
       </div>
@@ -48,11 +50,12 @@ class Banner extends React.Component {
 }
 
 class Timeline extends React.Component {
+  
   render () {
     return (
       <div class="container" style={{ marginTop: '3%', width: '90vw' }}>
         <hr></hr>
-        <div class="row no-gutters">
+          <div class="row no-gutters">
           <div class="col-sm">  </div>
           {/* <!-- timeline item 1 center dot --> */}
           <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
@@ -69,16 +72,19 @@ class Timeline extends React.Component {
             </div>
           </div>
           {/* <!-- timeline item 1 event content --> */}
+      
           <div class="col-sm py-2">
             <div class="card">
               <div class="card-body">
-                <div class="float-right text-muted small" >Sep 2014 - June 2018</div>
-                <h4 class="card-title text-muted">University of Science and technology Beijing</h4>
+                <div class="float-right text-muted small" >Sep 2014 - June 2018</div>  
+                <h4 class="card-title text-muted">University of Science and technology Beijing</h4>                
                 <p class="card-text">Bachelor in Internet of Things<br/> Minor Degree in Financial Engineering</p>
               </div>
             </div>
           </div>
-        </div>
+ 
+      </div>
+       
         {/* <!--/row-->
   <!-- timeline item 2 --> */}
         <div class="row no-gutters">

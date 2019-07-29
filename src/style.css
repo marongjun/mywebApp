@@ -161,3 +161,25 @@ body {
   grid-row-start: 3;
   grid-row-end: 6;
 }
+
+/* title brush highlight */
+.highlighto{
+  background: url(pic/brush.png);
+  background-repeat: no-repeat;
+  background-size: 30% 90%;
+  padding: 3% 5%;
+}
+
+.highlightw{
+  background: url(pic/brush.png);
+  background-repeat: no-repeat;
+  background-size: 50% 90%;
+  padding: 3% 5%;
+}
+
+.highlights{ 
+    background: url(pic/brush.png);
+    background-repeat: no-repeat;
+    background-size: 60% 90%;
+    padding: 3% 5%;
+}

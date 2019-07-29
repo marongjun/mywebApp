@@ -42,23 +42,24 @@ class NavList extends React.Component {
           <div class="justify-content-center" style={{ fontFamily: 'Raleway', textAlign: 'left', lineHeight: '200%' }} >
                     {/* ----------Overview-------- */}
                     <div class="justify-content-center" style={{ display: 'flex' }}>
-                      <div class="col-lg-8">
-                        <P style={{ fontSize: '1.5rem' }}><br/>Overview</P>
+                      <div class="col-lg-8">            
+                        <P class="highlighto" style={{ fontSize: '1.5rem'}}>Overview</P>                        
                         <P class="content"><br/>During the four-month internship at Nokia, my topic is to help a team under 5G product management department
                           to <u>develop an automation tool for market scouting information management and data visualization</u>. I am responsible for
                           designing and implementing the whole work flow from requirement specifiying, prototype designing and application implementing.
-                          During the iteration, I used <b class="word">Sketch</b> to draw the Lo-fi concept and then <b class="word">inVision</b> for Hi-fi one and implemented the <a href="https://github.com/marongjun/web" target="_blank">
-                          <b>first version</b></a> using <b class="word">ReactJs/Bootstrap (Front-end) /PHP (Backend)/MS SQL(Database)</b>. <br/><br/>Unfortunately, at the middle of my internship, due to confidential issues
+                          During the iteration, I used <b class="word">Sketch</b> to draw the Lo-fi concept and then <b class="word">inVision</b> for Hi-fi one and implemented the 
+                          <a href="https://github.com/marongjun/web" target="_blank" ><b> first version </b></a> 
+                          using <b class="word">ReactJs/Bootstrap (Front-end) /PHP (Backend)/MS SQL(Database)</b>. <br/><br/>Unfortunately, at the middle of my internship, due to confidential issues
                           concerning security and platform, we decided to transfer to use the tool SharePoint and dropped the incomplete web applictaion.
                           During the second half of my internship, I arranged team meetings to gather the requirements and created a team site with <b class="word">Microsoft SharePoint</b>
-                          and a <b class="word">Power BI</b> report for data visualization and info seraching.
+                          and a <b class="word">Power BI</b> report for data visualization and info searching.
                         </P>
                       </div>
                     </div>
                     {/* ----------Web Development-------- */}
                     <div class="justify-content-center" style={{ display: 'flex', marginTop: '5%' }}>
                       <div class="col-lg-8">
-                        <P style={{ fontSize: '1.5rem' }}>Web Development</P>
+                        <P class="highlightw" style={{ fontSize: '1.5rem' }}>Web Development</P>
                         <P class="content">
                           <br/><b>Specifiying Requirements</b><br/>
                         The idea is to create am automation tool to optimize the current working way with excel and store data distributedly among team
@@ -71,17 +72,20 @@ class NavList extends React.Component {
                     </div>
                     {/* ----------img sldies-------- */}
                     <div class="justify-content-center" style={{ display: 'flex' }}>
-                      <Carousel>
-                          <Carousel.Item>
-                            <img class="d-block w-100" src={nokia1} alt="First slide" style={{ padding: '10%' }}/>
-                          </Carousel.Item>
-                          <Carousel.Item>
-                            <img class="d-block w-100" src={nokia2} alt="Second slide" style={{ padding: '10%' }}/>
-                          </Carousel.Item>
-                          <Carousel.Item>
-                            <img class="d-block w-100" src={nokia3} alt="Third slide" style={{ padding: '10%' }}/>
-                          </Carousel.Item>
-                      </Carousel>
+                      <div class="col-lg-9">
+                        <Carousel>
+                            <Carousel.Item>
+                              <img class="d-block w-100" src={nokia1} alt="First slide" style={{ padding: '10%' }}/>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                              <img class="d-block w-100" src={nokia2} alt="Second slide" style={{ padding: '10%' }}/>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                              <img class="d-block w-100" src={nokia3} alt="Third slide" style={{ padding: '10%' }}/>
+                            </Carousel.Item>
+                        </Carousel>
+                      </div>
+                      
                     
                     </div>
                     {/* ----------Prototype-------- */}
@@ -92,7 +96,7 @@ class NavList extends React.Component {
                         After determining every detail about requirements, I began to design the interface with Sketch and made
                         an interactive prototype with inVison.<br/><br/>
                         Here is the link to the prototype and some screenshots of the design.<br/>
-                          <a href="https://projects.invisionapp.com/share/8BRVT7LEFA4#/screens/361854384" target="_blank">Try inVision Prototype</a>
+                          <a href="https://projects.invisionapp.com/share/8BRVT7LEFA4#/screens/361854384" target="_blank" ><b>Try inVision Prototype</b></a>
                         </P><br/><br/>
                         <img src={screenshots} class="shadow d-block" style={{ width: '70%', margin: 'auto' }}></img><br/><br/>
                       </div>
@@ -106,14 +110,14 @@ class NavList extends React.Component {
                           the backend is done by PHP and I use Microsoft SQL database to store the data. A query is done
                           via a procedure programmed in the database. In terms of the front-end part, I use the Bootstrap
                           components for the layout and ReactJS for the interaction.<br/>
-                          <a href="https://github.com/marongjun/web" target="_blank">Show me the Code</a>
+                          <a href="https://github.com/marongjun/web" target="_blank" ><b>Show me the Code</b></a>
                         </P>
                       </div>
                     </div>
                     {/* ---------SharePoint & PowerBI------- */}
                     <div class="justify-content-center" style={{ display: 'flex', marginTop: '5%' }}>
                       <div class="col-lg-8">
-                        <P style={{ fontSize: '1.5rem' }}>SharePoint and PowerBI</P><br/><br/>
+                        <P class="highlights" style={{ fontSize: '1.5rem' }}>SharePoint and PowerBI</P><br/>
                         <P class="content">
                       With the same Requirements, I quickly transformed the previous output using the MicroSoft SharePoint to create
                       a team site with the same function and then launched the first version with our team to test. The team
