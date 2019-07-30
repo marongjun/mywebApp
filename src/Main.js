@@ -17,7 +17,11 @@ class Banner extends React.Component {
   constructor (props) {
     super()
 
-    this.state = { textIdx: 0 }
+    this.state = { 
+      textIdx: 0,
+      it: undefined,
+      imtext: "A ",
+     }
   }
 
   componentDidMount () {

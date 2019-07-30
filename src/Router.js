@@ -9,7 +9,9 @@ import {Banner,Timeline} from './Main';
 import {SelfIntro,Social} from './Contact';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import {NavList,Content} from './projects/ProjectContent';
+import {NavListML,MLContent} from './projects/MLproject';
 import posed, { PoseGroup } from 'react-pose';
+
 
 const RouteContainer = posed.div({
   enter: { opacity: 1, delay: 300, beforeChildren: true },
@@ -51,7 +53,8 @@ function Test(){
                   <Route exact path="/mywebApp" component={Home} key="home"/>
                   <Route path="/projects" component={Projects} key="projects"/>
                   <Route path="/contact" component={About} key="about"/>
-                  <Route path="/item" component={Item} key="item"/>
+                  <Route path="/itemNokia" component={ItemNokia} key="itemNokia"/>
+                  <Route path="/itemML" component={ItemML} key="itemML"/>
                 </Switch>      
               </RouteContainer>    
             </PoseGroup>
@@ -99,20 +102,24 @@ function Projects({match}){
                     {/* <div class="view"> */}
                     {/* <img class="img-fluid" src="pic/p1.jpg" alt="" style={{ cursor: 'pointer' }}
                       onClick={this.imgClick.bind(this, 'projectcontent.html')}/> */}
-                    <Link to={"/item"}>
+                    <Link to={"/itemNokia"}>
                       <img class="img-fluid" src={p1} alt="" />
                       <div class="overlay">
                         <div class="text">Automation Tool for information management<br/>
                           <span style={{ fontSize: '30px', color: '#124191' }}>Nokia</span></div>
                       </div>
                     </Link>
-  
+                    
                   </div>
                   {/* project 2  */}
-                  <div class="col-md-6 my-1">
-                    <div class="view">
-                      <img class="img-fluid" src={p2} alt=""/>
-                    </div>
+                  <div class="view col-md-6 my-1">
+                  <Link to={"/itemML"}>
+                      <img class="img-fluid" src={p2} alt="" />
+                      <div class="overlay">
+                        <div class="text">Music Genre Classification<br/>
+                          <span style={{ fontSize: '30px', color: '#124191' }}>Machine Learning</span></div>
+                      </div>
+                    </Link>
                   </div>
   
                   {/* project 3  */}
@@ -135,7 +142,8 @@ function Projects({match}){
             </div>
             {/* <!--Main card--> */}
           </div>
-          <Route path={"/item"} component={Item} />
+          <Route path={"/itemNokia"} component={ItemNokia} />
+          <Route path={"/itemML"} component={ItemML} />
         </div>
             <Footer />
           </div>
@@ -143,13 +151,23 @@ function Projects({match}){
   )
 }
 
-function Item(){
+function ItemNokia(){
   return (
   <div>
     <NavList />
     <Content />
   </div>)
 }
+
+function ItemML(){
+  return(
+    <fragment>
+      <NavListML />
+      <MLContent />
+    </fragment>
+  )
+}
+
 
 function About(){
   return(
