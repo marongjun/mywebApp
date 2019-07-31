@@ -20,33 +20,54 @@ class Banner extends React.Component {
     this.state = { 
       textIdx: 0,
       it: undefined,
-      imtext: "A ",
+      imtext: "UX Designer",
      }
+    let textArray = [ 'Developer', 'Doer', 'Fast Learner', 'Data Enthusiast','UX Designer']
+    let that = this
+    this.setState({
+      it: setInterval(() => {
+        let currentIdx = this.state.textIdx
+        that.setState({
+          imtext: "",
+        })
+        let currentIdxChar = 0
+        let mIt = setInterval(() => {
+          let currentItem = textArray[currentIdx % textArray.length]
+          // console.log(currentItem.charAt(currentIdxChar))
+          that.setState({
+            imtext: that.state.imtext+currentItem.charAt(currentIdxChar)
+          })
+          // console.log(currentItem)
+          // console.log(currentIdxChar,"current index char")
+          if(currentIdxChar===currentItem.length-1){
+            clearInterval(mIt)
+          }
+          currentIdxChar++
+        }, 50);
+        console.log(that.state.textIdx)
+        that.setState({ textIdx: currentIdx + 1 })
+      }, 2000)
+    })
   }
 
   componentDidMount () {
-    this.timeout = setInterval(() => {
-      let currentIdx = this.state.textIdx
-      // console.log(this.state.textIdx)
-      this.setState({ textIdx: currentIdx + 1 })
-    }, 2000);
+    
   }
 
   componentWillUnmount () {
-    clearInterval(this.timeout);
+    // clearInterval(this.timeout)
   }
 
   render () {
-    const textArray = ['UX Designer', 'Front-End developer', 'Doer', 'Fast Learner', 'Thinker']
-    let textThatChanges = textArray[this.state.textIdx % textArray.length]
-
+    // let textThatChanges = textArray[this.state.textIdx % textArray.length]
+    
     return (
       <div class = "container" style={{ height: '90vmin' }}>
 
         <div class= "shaped" >
         </div>
         <p style={{ fontSize: '8vw' }} ><SplitText initialPose="exit" pose="enter" charPoses={charPoses}>Rongjun</SplitText></p>
-        <p style={{ fontSize: '4vw' }}>{textThatChanges} </p>
+        <p style={{ fontSize: '4vw' }}>{this.state.imtext} </p>
 
       </div>
     )

@@ -2,6 +2,7 @@ import React from 'react';
 import '../style.css';
 import posed from 'react-pose';
 import Carousel from 'react-bootstrap/Carousel';
+import MLprocess from '../pic/process.png'
 
 
 const Container = posed.div({
@@ -55,11 +56,11 @@ class MLContent extends React.Component {
                 {/* ----------Data & analysis-------- */}
                 <div class="justify-content-center" style={{ display: 'flex',marginTop:'2%' }}>
                     <div class="col-lg-8">            
-                    <P class="highlightw" style={{ fontSize: '1.5rem'}}>Analysis and Tr</P>                        
-                    <P class="content"><br/>The task is to identify the music genre of songs, 
-                    which is useful as a way to group music into categories that can be later used 
-                    for recommendation or discovery.
+                    <P class="highlightw" style={{ fontSize: '1.5rem'}}>Analysis and Training</P>                        
+                    <P class="content"><br/>The picture below shows the process and here is the link to the implementation.<br/>
+                    <a href="https://github.com/marongjun/MLproject" target="_blank" ><b>Show me the Code</b></a>
                     </P>
+                    <img src={MLprocess} class="shadow d-block" style={{ width: '80%', margin: 'auto' }}></img><br/><br/>
                     </div>
                 </div>
 
